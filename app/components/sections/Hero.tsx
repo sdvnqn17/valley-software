@@ -51,13 +51,52 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent" />
       </div>
 
-      {/* Formulario — derecha */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 flex justify-end items-center min-h-screen">
+      {/* Layout mobile: columna — desktop: fila con form a la derecha */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row lg:justify-end lg:items-center min-h-screen py-28 lg:py-0 gap-10 lg:gap-0">
+
+        {/* Título — mobile: arriba, desktop: absolute bottom-left */}
+        <div className="lg:hidden">
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="inline-flex items-center gap-2 mb-5"
+          >
+            <span className="w-4 h-px bg-valley-green" />
+            <span className="text-sm font-medium tracking-widest uppercase text-valley-green">
+              Arquitecturas digitales
+            </span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ fontSize: "clamp(2.4rem, 10vw, 4rem)", lineHeight: 1.05, letterSpacing: "-0.03em" }}
+            className="font-bold text-white"
+          >
+            Sistemas que hacen{" "}
+            <span style={{ color: "#3a7d44" }}>crecer</span>
+            <br />empresas.
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mt-4 text-base text-white/60 leading-relaxed"
+          >
+            Arquitecturas digitales que conectan procesos, automatizaciones e IA
+            para que las empresas operen mejor.
+          </motion.p>
+        </div>
+
+        {/* Formulario */}
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-xs"
+          className="w-full max-w-xs lg:ml-auto"
         >
           <div className="bg-white border border-neutral-200 shadow-xl p-8">
             <div className="flex items-center justify-between mb-6">
@@ -146,8 +185,8 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Título — bottom left */}
-      <div className="absolute bottom-0 left-0 z-10 px-8 pb-14 max-w-2xl">
+      {/* Título — bottom left (solo desktop) */}
+      <div className="hidden lg:block absolute bottom-0 left-0 z-10 px-8 pb-14 max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
