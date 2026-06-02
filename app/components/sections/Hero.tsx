@@ -52,7 +52,7 @@ export function Hero() {
       </div>
 
       {/* Layout mobile: columna — desktop: fila con form a la derecha */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row lg:justify-end lg:items-center min-h-screen py-28 lg:py-0 gap-10 lg:gap-0">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row lg:justify-end lg:items-center min-h-screen pt-28 pb-16 lg:py-0 gap-10 lg:gap-0">
 
         {/* Título — mobile: arriba, desktop: absolute bottom-left */}
         <div className="lg:hidden">
