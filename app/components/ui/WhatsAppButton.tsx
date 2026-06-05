@@ -1,7 +1,7 @@
 "use client";
 
 export function WhatsAppButton() {
-  const phone = "5492995743730";
+  const phone = "5492985090747";
   const message = "Hola! Me interesa saber más sobre Valley Software.";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
