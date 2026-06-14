@@ -69,7 +69,7 @@ export function Problemas() {
                     src={p.image}
                     alt={p.imageAlt}
                     fill
-                    className="object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                    className="object-cover object-center transition-all duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-neutral-950/50 group-hover:bg-neutral-950/30 transition-colors duration-300" />
                 </div>

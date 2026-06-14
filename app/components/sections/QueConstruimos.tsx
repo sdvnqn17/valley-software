@@ -79,7 +79,7 @@ export function QueConstruimos() {
                     src={item.image}
                     alt={item.imageAlt}
                     fill
-                    className="object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                    className="object-cover object-center transition-all duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-neutral-950/20 group-hover:bg-neutral-950/10 transition-colors duration-300" />
                 </div>
